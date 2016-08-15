@@ -1,0 +1,421 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.hide{
+    display: none;
+}
+.loading-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position:absolute;
+    overflow: hidden;
+}
+.loading-container .vertical-center {
+    height: 100%;
+    position: relative;
+}
+.vertical-center img {
+    display: block;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -25px;
+}
+.page{
+    width:100%;
+    height:100%;
+    position:absolute;
+    font-size:100px;
+    text-align:center;
+    background-color: #fff;
+    overflow: hidden;
+}
+.page .wrap{
+    height:100%;
+    position:relative;
+}
+.page-current{
+    z-index: 1;
+}
+.page-0-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.page-0-1 .img_2{
+    height: auto;
+    width: 96%;
+    position: absolute;
+    left: 4%;
+    top:3%;
+}
+.page-0-1 .img_3{
+    height: auto;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top:18%;
+}
+.page-0-1 .img_4{
+    height: auto;
+    width: 52%;
+    position: absolute;
+    left: 24%;
+    top:33%;
+}
+.page-0-1 .img_5{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.page-1-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-1-1 .img_2{
+    height: auto;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    bottom:10%;
+}
+.page-1-1 .img_3{
+    height: auto;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    bottom:81%;
+}
+.page-1-1 .img_4{
+    height: auto;
+    width: 92%;
+    position: absolute;
+    left: 4%;
+    bottom:24%;
+}
+.page-1-1 .img_5{
+    height: auto;
+    width: 18%;
+    position: absolute;
+    right: 8%;
+    bottom:24%;
+}
+.page-2-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-2-1 .img_2{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom:16%;
+}
+.page-2-1 .img_3{
+    height: auto;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    bottom:33%;
+}
+.page-3-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-3-1 .img_2{
+    height: auto;
+    width: 45%;
+    position: absolute;
+    left: 27%;
+    top:18%;
+}
+.page-4-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-4-1 .img_2{
+    height: auto;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top:22%;
+}
+.page-4-1 .img_3{
+    height: auto;
+    width: 82%;
+    position: absolute;
+    left: 9%;
+    top:42%;
+}
+.page-5-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-5-1 .img_2{
+    height: auto;
+    width: 65%;
+    position: absolute;
+    left: 17%;
+    top:20%;
+}
+.page-5-1 .img_3{
+    height: auto;
+    width: 82%;
+    position: absolute;
+    left: 9%;
+    top:40%;
+}
+.page-6-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-6-1 .img_2{
+    height: auto;
+    width: 65%;
+    position: absolute;
+    left: 17%;
+    top:20%;
+}
+.page-6-1 .img_3{
+    height: auto;
+    width: 82%;
+    position: absolute;
+    left: 9%;
+    top:37%;
+}
+.page-7-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-7-1 .img_2{
+    height: auto;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top:16%;
+}
+.page-7-1 .img_3{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:34%;
+}
+.page-8-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-8-1 .img_2{
+    height: auto;
+    width: 55%;
+    position: absolute;
+    left: 22%;
+    top:20%;
+}
+.page-9-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-9-1 .img_2{
+    height: auto;
+    width: 65%;
+    position: absolute;
+    left: 17%;
+    top:18%;
+}
+.page-9-1 .img_3{
+    height: auto;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top:42%;
+}
+.page-10-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-10-1 .img_2{
+    height: auto;
+    width: 54%;
+    position: absolute;
+    left: 23%;
+    top:20%;
+}
+.page-10-1 .img_3{
+    height: auto;
+    width: 82%;
+    position: absolute;
+    left: 9%;
+    top:40%;
+}
+.page-11-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-11-1 .img_2{
+    height: auto;
+    width: 58%;
+    position: absolute;
+    left: 21%;
+    top:20%;
+}
+.page-11-1 .img_3{
+    height: auto;
+    width: 82%;
+    position: absolute;
+    left: 9%;
+    top:37%;
+}
+.page-12-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-12-1 .img_2{
+    height: auto;
+    width: 58%;
+    position: absolute;
+    left: 21%;
+    top:20%;
+}
+.page-12-1 .img_3{
+    height: auto;
+    width: 82%;
+    position: absolute;
+    left: 9%;
+    top:37%;
+}
+.page-13-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-13-1 .img_2{
+    height: auto;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top:20%;
+}
+.page-13-1 .img_3{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:31%;
+}
+.page-14-1 .img_1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.page-14-1 .img_2{
+    height: auto;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom:30%;
+}
+.page-14-1 .img_3{
+    height: auto;
+    width: 3.7%;
+    position: absolute;
+    left: 42%;
+    bottom:35%;
+}
+.page-14-1 .img_4{
+    height: auto;
+    width: 14%;
+    position: absolute;
+    left: 50%;
+    bottom:44%;
+}
+.page-14-1 .img_5{
+    height: auto;
+    width: 16%;
+    position: absolute;
+    left: 50%;
+    bottom:35%;
+}
+.page-14-1 .img_6{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom:18%;
+}
+.page-14-1 .img_7{
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    bottom:6%;
+}
+.pt-page-moveIconUp{
+    width: 25px;
+    position: absolute;
+    left: 50%;
+    bottom:6%;
+    margin-left: -12px;
+}
+.audio-btn {
+    position: fixed;
+    right: 14px;
+    top: 14px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/music.png) no-repeat;
+    background-size: 30px auto;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+.audio-btn.on {
+    background-position: 0 -30px;
+}

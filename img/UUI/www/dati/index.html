@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=320, user-scalable=no, maximum-scale=1.3">
+    <title>创国卫答题</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body id="background">
+    <!------------ 输入手机号 -------------begining------------>
+    <div class="popup" style="display: none;">
+        <ul class="phone-box" id="phone-box">
+            <li>
+                <div class="input-box">
+                    <input type="text" placeholder="请输入手机号"/>
+                </div>
+            </li>
+            <li>
+                <div class="input-box" style="width:120px">
+                    <input type="text" placeholder="请输入验证码"/>
+                </div>
+                <input type="button" class="valid-btn" value="获取验证码" onclick="time(this)">
+            </li>
+        </ul>
+        <div class="start-box" id="start-box"><a class="start-btn" onclick="start()">开始答题</a></div>
+    </div>
+    <!------------ 输入手机号 -------------end------------>
+
+
+    <!----------- 头部 -------------begining------------>
+    <div class="lantern-box">
+        <img src="img/head.png">
+    </div>
+    <!----------- 头部 -------------end------------>
+
+
+    <!-----------回答 -------------begin------------>
+    <div class="question-box" data-curren-num="0">
+        <div class="question-list" data-num="1">
+            <h4><span>第一题</span></h4>
+            <div class="answer">
+                <p>三门共有几个小岛？</p>
+                <!-- <ul>
+                    <li>
+                        <label class="label disabled" for="no1" checked="checked">
+                            <input type="radio" name="question1" id="no1" />A.10个
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label disabled" for="no2">
+                            <input type="radio" name="question1" id="no2" />B.11个
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label disabled" for="no3">
+                            <input type="radio" name="question1" id="no3" />C.12个
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label disabled" for="no4">
+                            <input type="radio" name="question1" id="no4" />D.13个
+                        </label>
+                    </li>
+                </ul> -->
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="question1" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                </div>
+            </div>
+            <!-- <p class="icon-cir">上海共有几个区？</p>
+            <ul class="answer">
+                <li>
+                    <label class="label disabled" for="no1" checked="checked">10个</label>
+                    <input type="radio" name="question1" id="no1"/></li>
+                <li>
+                    <label class="label disabled" for="no2">10个</label>
+                    <input type="radio" name="question1" id="no2"/></li>
+                <li>
+                    <label class="label disabled" for="no3">10个</label>
+                    <input type="radio" name="question1" id="no3"/></li>
+                <li>
+                    <label class="label disabled" for="no4">10个</label>
+                    <input type="radio" name="question1" id="no4"/></li>
+            </ul> -->
+        </div>
+
+        <div class="question-list" data-num="2">
+            <h4><span>第二题</span></h4>
+            <!-- <p class="icon-cir">上海sadfasf共有几个区？</p>
+            <ul class="answer">
+                <li>
+                    <label class="label disabled" for="no21" checked="checked">10个</label>
+                    <input type="radio" name="question2" id="no21"/></li>
+                <li>
+                    <label class="label disabled" for="no22">20个</label>
+                    <input type="radio" name="question2" id="no22"/></li>
+                <li>
+                    <label class="label disabled" for="no23">10个</label>
+                    <input type="radio" name="question2" id="no23"/></li>
+                <li>
+                    <label class="label disabled" for="no24">10个</label>
+                    <input type="radio" name="question2" id="no24"/></li>
+            </ul> -->
+            <div class="answer">
+                <p>三门共有几个小岛？</p>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="question2" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-list" data-num="3">
+            <h4><span>第三题</span></h4>
+            <div class="answer">
+                <p>三门共有几个小岛？</p>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="question3" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value=""/>
+                        <div class="option"></div><span>A.10个</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-box" style="display:none">
+            <h4><span></span></h4>
+            <div class="answer">
+                <h6>恭喜你</h6>
+                <p class="font-pink">本次答题你使用了2分30秒！获得30分！</p>
+                <p class="tnode">请关注2月2日的开奖公示</p>
+<!--             <i class="icon-close">x</i> -->
+            </div>
+        </div>
+        <!--问题按钮和回到上一题-->
+        <div class="btn-group clearfix">
+            <div class="choose">
+                <a class="btn prev">&lt;上一题</a>
+                <a class="btn next">下一题&gt;</a>
+                <a class="btn submit" style="display: none;">提交</a>
+            </div>
+            <a href="#" class="yel-btn" style="display:none;">重新答题</a>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">活动规则</a>
+        <a href="#">活动奖品</a>
+        <a href="#">排行榜</a>
+        <a href="#">活动时间</a>
+    </div>
+
+    <script type="text/javascript">
+
+    $(function(){
+        var $windowH = $(window).height();
+        // $(".question-box").css("minHeight",$windowH-200+"px");
+        $(".question-box").on("click", ".icon-close", function(){
+            $(".popup").hide();
+        });
+        $(".question-box").on("click", ".prev", function(){
+            prev(this);
+        });
+        $(".question-box").on("click", ".next", function(){
+            next(this);
+        });
+        $(".question-box").on("click", ".submit", function(){
+            submitAll(100);
+        })
+        toast.start();
+    })
+
+    var question = {};
+        question.length = 0;
+        question.current = 1;
+        question.time = 0;
+        question.countTime;
+
+    // 开始回答
+    function start(){
+
+
+        // 验证成功后弹框隐藏，增加事件
+        $(".popup").hide();
+        question.length = $(".question-list").length;
+        question.countTime = setInterval(function(){
+            question.time++;
+        },1000)
+        return false;
+    }
+    //选中文本颜色改变
+
+    // 下一题
+    function next(obj){
+        clearTimeout(t);
+        var $radio= $("input[name='question"+question.current+"']");
+        var check = 0;
+        $.each($radio, function(idx, elem){
+            if(elem.checked){
+                check = 1;
+            }
+        });
+        if(!check){
+            toast.error("答案不能为空");
+            return false;
+        }
+        var t = setTimeout(function(){
+            question.current++;
+            $(".question-list[data-num='"+question.current+"']").show().siblings(".question-list").hide();
+            if(question.current == question.length){$(".next").hide(); $(".submit").show();}
+        },200);
+    }
+    // 上一题
+    function prev(){
+        if(question.current>1){
+            question.current--;
+            $(".question-list[data-num='"+question.current+"']").show().siblings(".question-list").hide();
+        }else{
+            toast.error("已经是第一题");
+        }
+    }
+
+    //提交
+    function submitAll(mark){
+        var $radio= $("input[name='question"+question.current+"']");
+        var check = 0;
+        $.each($radio, function(idx, elem){
+            if(elem.checked){
+                check = 1;
+            }
+        });
+        if(!check){
+            toast.error("答案不能为空");
+            return false;
+        }
+        clearInterval(question.countTime);
+        $(".font-pink").text("本次答题你使用了"+question.time+"秒！获得"+mark+"分！")
+        $(".end-box").show().siblings(".question-list").hide();
+        $(".choose").hide();$(".yel-btn").show();
+    }
+    var toast = {
+        start: function(){
+            // var html = '<div class="popup">\
+            //     <div class="toast-box">开始答题<a href="#" onclick="return start();">开始答题</a>\
+            //     </div></div>';
+            var html='<div class="popup">\
+                <div class="toast-box">\
+                    <ul class="phone-box" id="phone-box">\
+                        <li>\
+                            <div class="input-box">\
+                    <input type="text" placeholder="请输入手机号"/>\
+                </div>\
+            </li>\
+            <li>\
+                <div class="input-box">\
+                    <input type="text" placeholder="请输入验证码"/>\
+                </div>\
+                <input type="button" class="valid-btn" value="获取验证码" onclick="time(this)">\
+            </li>\
+        </ul>\
+        <div class="start-box"><a class="start-btn" onclick="start()">开始答题</a></div>\
+                </div></div>';
+            $("body").append(html);
+        },
+        content: function(tit, cont){
+            var html
+        },
+        error: function(txt){
+            var html = '<div class="popup">\
+                 <div class="toast-box error">'+txt+'<a href="#" onclick="return toast.close();">确定</a>\
+                 </div></div>';
+            $("body").append(html);
+        },
+        close: function(){
+            $(".popup").hide();
+            return false;
+        }
+    }
+    var wait=60;
+    function time(o) {
+        if (wait == 0) {
+            o.removeAttribute("disabled");
+            o.value="获取验证码";
+            } else{
+                o.setAttribute("disabled", true);
+                o.value="重新发送(" + wait + ")";
+                wait--;
+                setTimeout(function() {
+                time(o)
+                },1000)
+        }
+    }
+    // function changColor{
+    //     $(".label:checked").css("background":"url(..img/bg1.png) no-repeat","color":"#38a6fc");
+    // }
+    </script>
+</body>
+</html>

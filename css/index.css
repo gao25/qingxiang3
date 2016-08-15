@@ -1,0 +1,386 @@
+body{
+    font-family:'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height:1.231;
+    font-weight:300;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 100px;
+    text-align: center;
+    background: url(../img/bg.jpg);
+    background-size:100% 100%;
+    overflow: hidden;
+}
+.page.wrap{
+    height: 100%;
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.page-current{
+    z-index: 1;
+}
+.img_0{
+    width: 9%;
+    position: absolute;
+    right: 6%;
+    top: 3%;
+    z-index: 1000;
+}
+/*.page .img_bg{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}*/
+.page-1-1,.page-4-1{
+    background: url(../img/page1/bg.png);
+    background-size: 100% 100%;
+}
+.page-1-1 .img_1{
+    height: auto;
+    width: 32%;
+    position: absolute;
+    left: 35%;
+    bottom: 47%;
+}
+.page-1-1 .img_2{
+    height: auto;
+    width: 12%;
+    position: absolute;
+    left: 44%;
+    bottom: 23%;
+}
+.page-1-1 .img_3{
+    height: auto;
+    width: 60%;
+    position: absolute;
+    left: 44%;
+    bottom: 37%;
+}
+.page-1-1 .img_4{
+    height: auto;
+    width: 15%;
+    position: absolute;
+    left: 34%;
+    bottom: 74%;
+}
+.page-1-1 .img_5{
+    height: auto;
+    width: 22%;
+    position: absolute;
+    left: 19%;
+    bottom: 64%;
+}
+.page-1-1 .img_6{
+    height: auto;
+    width: 10%;
+    position: absolute;
+    left: 49%;
+    bottom: 45%;
+}
+.page-2-1 .img_1{
+    height: auto;
+    width: 108%;
+    position: absolute;
+    left: -4.5%;
+    bottom: 20%;
+}
+.page-2-1 .img_2{
+    height: auto;
+    width: 12%;
+    position: absolute;
+    left: 44%;
+    bottom: 9%;
+}
+.page-2-1 .img_3{
+    height: auto;
+    width: 8.6%;
+    position: absolute;
+    left: 62%;
+    bottom: 63%;
+}
+.page-2-1 .img_4{
+    height: auto;
+    width: 8.6%;
+    position: absolute;
+    left: 32%;
+    bottom: 48%;
+}
+.page-2-1 .img_5{
+    height: auto;
+    width: 8.6%;
+    position: absolute;
+    left: 12%;
+    bottom: 54%;
+}
+.page-3-1 .img_1{
+    height: auto;
+    width: 110%;
+    position: absolute;
+    left: -5%;
+    bottom: 34%;
+}
+.page-3-1 .img_2{
+    height: auto;
+    width: 12%;
+    position: absolute;
+    left: 44%;
+    bottom: 20%;
+}
+.page-3-1 .img_3{
+    height: auto;
+    width: 9%;
+    position: absolute;
+    left: 70%;
+    bottom: 73%;
+}
+.page-3-1 .img_4{
+    height: auto;
+    width: 9%;
+    position: absolute;
+    left: 34%;
+    bottom: 63%;
+}
+.page-3-1 .img_5{
+    height: auto;
+    width: 9%;
+    position: absolute;
+    left: 65%;
+    bottom: 42%;
+}
+.page-4-1 .img_bg{
+    height: 113%;
+}
+.page-4-1 .img_1{
+    height: auto;
+    width: 4%;
+    position: absolute;
+    left: 16%;
+    bottom: 65%;
+}
+.page-4-1 .img_2{
+    height: auto;
+    width: 20%;
+    position: absolute;
+    left: 66%;
+    bottom: 38%;
+}
+.page-4-1 .img_3{
+    height: auto;
+    width: 19%;
+    position: absolute;
+    left: 40%;
+    bottom: 53%;
+}
+.page-4-1 .img_4{
+    height: auto;
+    width: 9%;
+    position: absolute;
+    left: 76%;
+    bottom: 60%;
+}
+.page-4-1 .img_5{
+    height: auto;
+    width: 52%;
+    position: absolute;
+    left: 1%;
+    bottom: 31%;
+}
+.page-5-1 .img_1{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 27%;
+    bottom: 56%;
+}
+.page-5-1 .img_2{
+    height: auto;
+    width: 52%;
+    position: absolute;
+    left: 25%;
+    bottom: 8%;
+}
+.page-5-1 .img_3{
+    height: auto;
+    width: 45%;
+    position: absolute;
+    left: 25%;
+    bottom: 8%;
+}
+.page-5-1 .img_4{
+    height: auto;
+    width: 51%;
+    position: absolute;
+    left: 2%;
+    bottom: 58%;
+}
+.page-5-1 .img_5{
+    height: auto;
+    width: 10%;
+    position: absolute;
+    left: 70%;
+    bottom: 50%;
+}
+.page-5-1 .img_6{
+    height: auto;
+    width: 35%;
+    position: absolute;
+    left: 68%;
+    bottom: 10%;
+}
+.page-6-1 .img_1{
+    height: auto;
+    width: 105%;
+    position: absolute;
+    left: -35%;
+    bottom: 50%;
+}
+.page-6-1 .img_2{
+    height: auto;
+    width: 10%;
+    position: absolute;
+    left: 16%;
+    bottom: 42%;
+}
+.page-6-1 .img_3{
+    height: auto;
+    width: 43%;
+    position: absolute;
+    left: 55%;
+    bottom: 48%;
+}
+.page-6-1 .img_4{
+    height: auto;
+    width: 43%;
+    position: absolute;
+    left: 47%;
+    bottom: 49%;
+}
+.page-6-1 .img_5{
+    height: auto;
+    width: 77%;
+    position: absolute;
+    left: 1%;
+    bottom: 0;
+}
+.page-7-1{
+    background: url(../img/page7/bg.png);
+    background-size: cover;
+ /*   background-position: 50% 120%;*/
+}
+.page-7-1 .img_1{
+    height: auto;
+    width: 110%;
+    position: absolute;
+    left: -5%;
+    bottom: -3%;
+}
+.page-7-1 .img_2{
+    height: auto;
+    width: 68%;
+    position: absolute;
+    left: 16%;
+    bottom: 35%;
+}
+.page-7-1 .img_3{
+    height: auto;
+    width: 62%;
+    position: absolute;
+    left: 19%;
+    bottom: 23%;
+}
+.page-7-1 .img_4{
+    height: auto;
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    bottom: 15%;
+}
+.page-8-1{
+    background: url(../img/page8/bg.png);
+    background-size: cover;
+}
+.page-8-1 .img_1{
+    height: auto;
+    width: 60%;
+    position: absolute;
+    left: 21%;
+    bottom: 39%;
+}
+.page-8-1 .img_2{
+    height: auto;
+    width: 66%;
+    position: absolute;
+    left: 17%;
+    bottom: 16%;
+}
+.page-8-1 .img_3{
+    height: auto;
+    width: 16%;
+    position: absolute;
+    left: 42%;
+    bottom: 26%;
+}
+.page-8-1 .img_4{
+    height: auto;
+    width: 62%;
+    position: absolute;
+    left: 19%;
+    bottom: 14%;
+}
+.page-8-1 .img_5{
+    height: auto;
+    width: 72%;
+    position: absolute;
+    left: 14%;
+    bottom: 79%;
+}
+.marked{
+    height: auto;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    bottom: 5%;
+}
+.pt-page-moveIconUp{
+    width: 22px;
+    position: absolute;
+    left: 50%;
+    bottom:3%;
+    margin-left: -11px;
+}
+.progress{
+    z-index:100;
+    height:3px;
+    width:100%;
+    background-color:rgba(0,0,0,.2);
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.progress span{
+    display:block;
+    height:100%;
+    background-color:#08A1EF;
+    transition:width .8s cubic-bezier(.26,.86,.44,.985);
+}
+.page-tip{
+    display:inline-block;
+    float:right;
+    position:absolute;
+    right:0;
+    top:-17px;
+    font-size:13px;
+    font-style:normal;
+    color:#fff;
+    padding-left:5px;
+    z-index:100;
+}
